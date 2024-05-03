@@ -15,7 +15,7 @@
         <div class="navigation-icon">
         </div>
 
-        <nav>
+        <nav class="navigation-button">
             <button type="button" onclick="validation()">Home</button>
             <button>Our package</button>
             <button>Contact us</button>
@@ -35,11 +35,23 @@
             <div class="core-item item-right">
                 <header>
                     <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
                 </header>
 
                 <section class="item-form">
-                    <label>Username:</label><input type="text">
+                    <label>Username:</label> <br>
+                    <input type="text" placeholder="Full name"> <br>
+                    <label>Email address:</label> <br>
+                    <input type="text" placeholder="example@gmail.com"> <br>
+                    <label>What are you interested in:</label> <br>
+                    <select class="option_content">
+                        <option>Bali</option>
+                        <option>Jakarta</option>
+                        <option>Bandung</option>
+                    </select> <br>
                 </section>
+
+                <button class="button-send">Send</button>
             </div>
         </section>
 
