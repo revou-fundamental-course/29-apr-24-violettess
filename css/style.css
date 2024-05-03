@@ -1,1 +1,77 @@
 /*Ini CSS*/
+
+body{
+    font-family: 'Roboto' ;
+}
+.navigation-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+}
+
+.navigation-icon {
+    background-image: url(../assets/ghibli.gif);
+    border: 0;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+.navigation-container>nav>button {
+    height: 32px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.content-container>header {
+    text-align: center;
+}
+
+.core-content {
+    display: flex;
+}
+
+.core-item {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 18px;
+}
+
+.core-item>header>h2 {
+    text-align: center;
+}
+
+.item-right {
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+}
+
+.item-form {
+    text-align: center;
+}
+
+.item-form>input {
+    height: 32px;
+    width: 50%;
+    margin-left: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/*OUR PACKAGE*/
+.our-package-content {
+    align-content: center;
+    background-color: aquamarine;
+    height: 100px;
+    text-align: center;
+}
+
+.our-package-content>h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
