@@ -34,6 +34,10 @@ body {
     text-align: center;
 }
 
+.header-header {
+    font-size: 50px;
+}
+
 /*2 kotak*/
 .core-content {
     display: flex;
@@ -111,7 +115,28 @@ body {
 }
 
 .our-package-content>h1 {
-    font-size: 24px;
     font-weight: bold;
     text-align: center;
+    font-size: 35px;
+}
+
+.our-package-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
