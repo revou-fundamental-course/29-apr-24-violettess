@@ -1,6 +1,7 @@
 /*Ini CSS*/
 body {
     font-family: 'Roboto';
+    margin: 0;
 }
 
 .navigation-container {
@@ -10,6 +11,7 @@ body {
     padding-right: 50px;
     padding-top: 12px;
     padding-bottom: 12px;
+    background-color: whitesmoke ;
 }
 
 .navigation-icon {
@@ -26,21 +28,33 @@ body {
 
 .navigation-container>nav>button {
     height: 32px;
-    border: 1px solid black;
+    border: 1px solid rgb(135, 135, 135);
     background-color: white;
 }
 
-.content-container>header {
-    text-align: center;
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: rgba(192, 192, 192, 0.8);
+    margin: 0;
 }
 
 .header-header {
     font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-container>header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /*2 kotak*/
 .core-content {
     display: flex;
+    margin: 50px;
 }
 
 .core-item {
@@ -88,7 +102,7 @@ body {
     margin-left: 50px;
     margin-top: 3px;
     margin-bottom: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgb(135, 135, 135);
     border-radius: 4px;
 }
 
@@ -103,10 +117,12 @@ body {
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%); 
+    background-color: white;
+    border: 1px solid rgb(135, 135, 135);
 }
 
 /*OUR PACKAGE*/
-.our-package-content {
+.top-destination-content {
     align-content: center;
     background-color: whitesmoke;
     height: 100px;
@@ -114,29 +130,95 @@ body {
     margin-top: 50px;
 }
 
-.our-package-content>h1 {
+.top-destination-content>h1 {
     font-weight: bold;
     text-align: center;
     font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-.our-package-container {
+.top-destination-content>p {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+
+.top-destination-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
     padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .product {
-    background-color: #f0f0f0;
+    background-color: whitesmoke;
     border: 1px solid #ccc;
-    padding: 20px;
     box-sizing: border-box;
-    text-align: center;
+    border-radius: 4px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .image {
     max-width: 100%; 
     height: auto; 
-    margin-bottom: 10px; 
 }
+
+.top-destination-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.product>.top-destination-text>h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.product>.top-destination-text>p {
+    font-size: smaller;
+}
+
+
+/*Bottom part*/
+.bottom-text {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.bottom-text>h1 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.book-now {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(135, 135, 135);
+    background-color: white;
+    width: 25%;
+    height: 40px;
+}
+
