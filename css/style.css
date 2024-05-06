@@ -2,6 +2,11 @@
 body {
     font-family: 'Roboto';
     margin: 0;
+    color: #3B4754;
+}
+
+p {
+    color: #798DA3;
 }
 
 .navigation-container {
@@ -11,7 +16,6 @@ body {
     padding-right: 50px;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: whitesmoke ;
 }
 
 .navigation-icon {
@@ -28,7 +32,7 @@ body {
 
 .navigation-container>nav>button {
     height: 32px;
-    border: 1px solid rgb(135, 135, 135);
+    border: 1px solid rgba(135, 135, 135);
     background-color: white;
 }
 
@@ -51,91 +55,117 @@ hr {
     font-size: 18px;
 }
 
+.content-container>header>p {
+    font-weight: normal;
+}
+
 /*2 kotak*/
 .core-content {
     display: flex;
+    justify-content: space-between;
     margin: 50px;
 }
 
-.core-item {
-    height: 320px;
+/*KOTAK KIRI*/
+.item-left {
+    margin-left: 18px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.testimony {
     border: 1px solid black;
-    margin: 18px;
+}
+.information {
+    font-size: small;
+    text-align: justify;
 }
 
-.core-item>header>h2 {
-    text-align: center;
+.information-header {
+    font-size: 20px;
 }
 
-.core-item>header>p {
-    text-align: center;
-    margin: 20px;
-    font-size: smaller;
+.information-header {
+    font-size: 20px;
+}
+
+.information-content {
+    font-size: 15px;
+    color: #798DA3;
 }
 
 /*KOTAK KANAN*/
 .item-right {
     position: relative; 
-    background-color: whitesmoke;
+    background-color: #EDF0F4;
     border: 0;
     border-radius: 8px;
-    padding-bottom: 70px;
+    width: 50%;
+    height: 400px;
+    padding-bottom: 50px;
     padding-top: 20px;
+}
+
+.item-right-header {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.item-right-header>p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: smaller;
 }
 
 .item-form {
     text-align: left;
-    padding-left: 30px;
-    padding-bottom: 50px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .item-form>label {
-    margin: 50px;
-    margin-top: 10px;
+    font-size: small;
+    font-weight: bold;
 }
 
 .item-form>input,
 .item-form>select {
-    height: 32px;
-    width: 75%;
-    margin-left: 50px;
-    margin-top: 3px;
+    width: 100%;
+    margin-top: 5px;
     margin-bottom: 10px;
-    border: 1px solid rgb(135, 135, 135);
+    height: 30px;
+    border: 2px solid #C9D3DD;
     border-radius: 4px;
+    color: #C9D3DD;
+    background: white;
 }
 
 ::placeholder {
+    color: #C9D3DD;
     padding-left: 10px;
 }
 
 .button-send {
-    padding: 10px;
-    width: 200px;
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%); 
-    background-color: white;
-    border: 1px solid rgb(135, 135, 135);
-}
-
-/*INFORMATION*/
-.information {
-    margin-left: 68px;
-    margin-right: 68px;
-    margin-bottom: 100px;
-}
-
-.information-header{
-    font-size: 30px;
+    padding: 14px;
+    width: 100%;
+    background-color: #29323D;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 /*TOP DESTINATION*/
 .top-destination-content {
     align-content: center;
-    background-color: whitesmoke;
+    background-color: #EDF0F4;
     height: 100px;
     text-align: center;
     margin-top: 50px;
@@ -166,7 +196,7 @@ hr {
 }
 
 .product {
-    background-color: whitesmoke;
+    background-color: #EDF0F4;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;
@@ -224,12 +254,13 @@ hr {
 }
 
 .book-now {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: 1px solid rgb(135, 135, 135);
-    background-color: white;
+    border: 0;
+    background-color: #29323D;
+    border-radius: 4px;
+    color: white;
     width: 25%;
     height: 40px;
+    font-weight: bold;
 }
 
 /*footer*/
