@@ -7,7 +7,6 @@
     <title>My Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -16,9 +15,9 @@
         </div>
 
         <nav class="navigation-button">
-            <button type="button" onclick="validation()">Search</button>
-            <button>Login</button>
-            <button>Register</button>
+            <button class="nav-button">Search</button>
+            <button class="nav-button">Login</button>
+            <button class="nav-button">Register</button>
         </nav>
     </header>
     <hr>
@@ -32,21 +31,48 @@
         <section class="core-content">
             <div class="item-left">
                 <div class="testimony">
-                    <p>eef</p>
+                    <div class="testimony-image-container">
+                        <img class="img-slideshow" src="assets/terstimony1.png">
+                        <img class="img-slideshow" src="assets/terstimony2.png">
+                        <img class="img-slideshow" src="assets/terstimony3.png">
+                    </div>
+                    <div class="testimony-text">
+                        <h1>Check out our travellers' testimonies!</h1>
+                        <p class="text-slideshow">"Thanks to Wanderlust Voyage, we can explore Japanese temples in traditional kimono attire. It was a dream come true."
+                            <br> <br>
+                            Hermione Granger - Japan 2023 Summer Trip
+                        </p>
+                        <p class="text-slideshow">"Watching hot air balloons drift over Cappadocia's surreal landscapes was mesmerizing. Huge thanks to Wanderlust Voyages for an amazing adventure!"
+                            <br> <br>
+                            Scarlett Woods - Turkey 2023 Autumn Trip
+                        </p>
+                        <p class="text-slideshow">"Our Netherlands trip with Wanderlust Voyages was incredible. Walking among endless fields of blooming tulips was simply breathtaking."
+                            <br> <br>
+                            Liz Gilmoire - Western Europe 2024 Spring Trip
+                        </p>
+                        <button onclick="plusDivs(-1)" class="slideshow-button"> < </button>
+                        <button onclick="plusDivs(+1)" class="slideshow-button"> > </button>
+                    </div>
+
+                    <script src="js/script.js"></script>
+
                 </div>
+
                 <div class="information">
                     <div class="information-header">
                         <h1>Why Us?</h1>
                     </div>
                    
                     <div class="information-content">
-                        
+                        <img src="assets/no1.png" class="info-image">
                         <p>Personalized experiences, crafted just for you.<p>
                     </div>
                     <div class="information-content">
+                        <img src="assets/no2.png" class="info-image">
                         <p>Expert guidance from our seasoned travel companions.<p>
                     </div>
                     <div class="information-content">
+                        <img src="assets/no3.png" class="info-image">
                         <p>Seamless planning and support from itinerary planning to on-the-go assistance.<p>
                     </div>
                 </div>
