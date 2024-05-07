@@ -127,6 +127,10 @@ hr {
     margin-right: 40px;
 }
 
+.bold {
+    font-size: smaller;
+}
+
 .slideshow-button {
     padding: 10px;
     border: 1px solid #798DA3;
