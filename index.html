@@ -4,54 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
+    <title>Wanderlust Voyages Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
+
     <header class="navigation-container">
-        <div class="navigation-icon">
-        </div>
+
+        <div class="navigation-icon"></div>
 
         <nav class="navigation-button">
             <button class="nav-button">Search</button>
             <button class="nav-button">Login</button>
             <button class="nav-button">Register</button>
         </nav>
-    </header>
-    <hr>
+
+    </header> <hr>
 
     <article class="content-container">
+
         <header>
             <h1 class="header-header">Wanderlust Voyages</h1>
             <p>Explore. Dream. Discover.</pp>
         </header>
 
         <section class="core-content">
+
             <div class="item-left">
+
                 <div class="testimony">
+
                     <div class="testimony-image-container">
                         <img class="img-slideshow" src="assets/terstimony1.png">
                         <img class="img-slideshow" src="assets/terstimony2.png">
                         <img class="img-slideshow" src="assets/terstimony3.png">
                     </div>
+
                     <div class="testimony-text">
                         <h1>Check out our travellers' testimonies!</h1>
                         <p class="text-slideshow">"Thanks to Wanderlust Voyage, we can explore Japanese temples in traditional kimono attire. It was a dream come true."
                             <br> <br>
                             <b class="bold">Hermione Granger - Japan 2023 Summer Trip</b>
                         </p>
+
                         <p class="text-slideshow">"Watching hot air balloons drift over Cappadocia's surreal landscapes was mesmerizing. Huge thanks to Wanderlust Voyages for an amazing adventure!"
                             <br> <br>
                             <b class="bold">Scarlett Woods - Turkey 2023 Autumn Trip</b>
                         </p>
+
                         <p class="text-slideshow">"Our Netherlands trip with Wanderlust Voyages was incredible. Walking among endless fields of blooming tulips was simply breathtaking."
                             <br> <br>
                             <b class="bold">Liz Gilmoire - Western Europe 2024 Spring Trip</b>
                         </p>
-                        <button onclick="plusDivs(-1)" class="slideshow-button"> < </button>
-                        <button onclick="plusDivs(+1)" class="slideshow-button"> > </button>
+
+                        <div class="slideshow-button-container">
+                            <button onclick="plusDivs(-1)" class="slideshow-button"> < </button>
+                            <button onclick="plusDivs(+1)" class="slideshow-button"> > </button>
+                        </div>
+
                     </div>
 
                     <script src="js/script.js"></script>
@@ -59,6 +71,7 @@
                 </div>
 
                 <div class="information">
+
                     <div class="information-header">
                         <h1>Why Us?</h1>
                     </div>
@@ -67,41 +80,54 @@
                         <img src="assets/no1.png" class="info-image">
                         <p>Personalized experiences, crafted just for you.<p>
                     </div>
+
                     <div class="information-content">
                         <img src="assets/no2.png" class="info-image">
                         <p>Expert guidance from our seasoned travel companions.<p>
                     </div>
+
                     <div class="information-content">
                         <img src="assets/no3.png" class="info-image">
                         <p>Seamless planning and support from itinerary planning to on-the-go assistance.<p>
                     </div>
+
                 </div>
+
             </div>
 
             <div class="item-right">
+                <div class="item-right-box">
                 <header class="item-right-header">
                     <h3>Contact Us</h3>
                     <p>We will contact you within 24 hours after receiving your information.</p>
                 </header>
 
                 <section class="item-form">
+                    <form>
+
                     <label>Your name:</label> <br>
-                    <input type="text" placeholder="Full name"> <br>
+                    <input type="text" id="name" name="name" placeholder="Full name"> <br>
+
                     <label>Email address:</label> <br>
-                    <input type="text" placeholder="example@gmail.com"> <br>
-                    <label>Where are you interested in:</label> <br>
-                    <select class="option-content">
-                        <option selected disabled>Select an option</option>
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com"> <br>
+
+                    <label>Where will your next holiday be?</label> <br>
+                    <select class="option-content" id="selection" name="selection" >
                         <option>South Korea</option>
                         <option>Japan</option>
                         <option>China</option>
                         <option>Maldives</option>
                         <option>France</option>
                         <option>Italy</option>
-                        <details>Others</option>
+                        <option>Others</option>
                     </select> <br>
-                    <button class="button-send">SEND</button>
+
+                    <button class="button-send" id="button-send" type="button">SEND</button>
+
+                    <script src="js/script.js"></script>
+                    </form>
                 </section>
+                </div>
             </div>
         </section>
 
@@ -110,9 +136,7 @@
             <div class="top-destination-content">
                 <h1>Top Destinations</h1>
             </div>
-        </section>
-        
-        <section>
+
             <div class="top-destination-container">
                 <!-- First Row -->
                 <div class="product">
