@@ -30,6 +30,25 @@ p {
         flex-direction: column;
     }
 
+    .item-left {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
+    }
+
+    .testimony-image-container {
+        margin: 0 !important;
+        justify-content: center;
+        display: flex;
+    }
+
+    .img-slideshow {
+        width: 90% !important;
+        height: 90% !important;
+        justify-content: center;
+        margin: 10px;
+    }
+
     .item-right {
         width: 100%;
     }
@@ -43,7 +62,7 @@ p {
     }
 }
 
-
+/*Header*/
 .navigation-container {
     display: flex;
     justify-content: space-between;
@@ -84,7 +103,7 @@ hr {
     margin: 0;
 }
 
-.header-header {
+.web-header {
     font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
@@ -100,14 +119,14 @@ hr {
     font-weight: normal;
 }
 
-/*2 kotak*/
+/*Core Content (2 boxes)*/
 .core-content {
     display: flex;
     justify-content: space-between;
     margin: 50px;
 }
 
-/*KOTAK KIRI*/
+/*Left box (Testimony)*/
 .item-left {
     margin-left: 18px;
     margin-right: 50px;
@@ -151,7 +170,7 @@ hr {
     color: #798DA3;
 }
 
-/*WHY US*/
+/*Left Box (Why Us)*/
 .information {
     font-size: small;
     text-align: left;
@@ -178,7 +197,7 @@ hr {
     margin-right: 15px;
 }
 
-/*KOTAK KANAN*/
+/*Right Box (Form)*/
 .item-right-box {
     background-color: #EDF0F4;
     border: 0;
@@ -218,7 +237,7 @@ hr {
 .item-form>form>select {
     width: 100%;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     height: 30px;
     border: 2px solid #C9D3DD;
     border-radius: 4px;
@@ -240,9 +259,20 @@ hr {
     color: white;
     font-weight: bold;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-/*TOP DESTINATION*/
+.error-message {
+    font-size: 12px;
+    color: red;
+}
+
+.success-message {
+    font-size: 13px;
+    color: green;
+}
+
+/*Top Destination*/
 .top-destination-content {
     align-content: center;
     background-color: #EDF0F4;
@@ -341,7 +371,7 @@ hr {
     font-weight: bold;
 }
 
-/*footer*/
+/*Footer*/
 .footer {
     text-align: center;
     margin-top: 30px;

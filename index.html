@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- Header -->
     <header class="navigation-container">
 
         <div class="navigation-icon"></div>
@@ -26,20 +26,22 @@
     <article class="content-container">
 
         <header>
-            <h1 class="header-header">Wanderlust Voyages</h1>
+            <h1 class="web-header">Wanderlust Voyages</h1>
             <p>Explore. Dream. Discover.</pp>
         </header>
 
         <section class="core-content">
 
+            <!-- Left box -->
             <div class="item-left">
 
+                <!-- Left box (testimony) -->
                 <div class="testimony">
 
                     <div class="testimony-image-container">
-                        <img class="img-slideshow" src="assets/terstimony1.png">
-                        <img class="img-slideshow" src="assets/terstimony2.png">
-                        <img class="img-slideshow" src="assets/terstimony3.png">
+                        <img class="img-slideshow" src="assets/terstimony-japan.png" alt="Japanese temple">
+                        <img class="img-slideshow" src="assets/terstimony-turkey.png" alt="Cappadocia, Turkey, hot air balloons">
+                        <img class="img-slideshow" src="assets/terstimony-netherlands.png" alt="Tulip field in Netherlands">
                     </div>
 
                     <div class="testimony-text">
@@ -59,6 +61,7 @@
                             <b class="bold">Liz Gilmoire - Western Europe 2024 Spring Trip</b>
                         </p>
 
+                        <!-- Button for sliding banner -->
                         <div class="slideshow-button-container">
                             <button onclick="plusDivs(-1)" class="slideshow-button"> < </button>
                             <button onclick="plusDivs(+1)" class="slideshow-button"> > </button>
@@ -70,6 +73,7 @@
 
                 </div>
 
+                <!-- Left box (Why Us)-->
                 <div class="information">
 
                     <div class="information-header">
@@ -89,12 +93,13 @@
                     <div class="information-content">
                         <img src="assets/no3.png" class="info-image">
                         <p>Seamless planning and support from itinerary planning to on-the-go assistance.<p>
-                    </div>
+                    </div> <br>
 
                 </div>
 
-            </div>
+            </div> <br>
 
+            <!-- Right box (Form) -->
             <div class="item-right">
                 <div class="item-right-box">
                 <header class="item-right-header">
@@ -106,24 +111,29 @@
                     <form>
 
                     <label>Your name:</label> <br>
-                    <input type="text" id="name" name="name" placeholder="Full name"> <br>
+                    <input type="text" id="name" name="name" placeholder="Full name">
+                    <div id="name-error" class="error-message"></div> <br> <!-- Error message -->
 
                     <label>Email address:</label> <br>
-                    <input type="text" id="email" name="email" placeholder="example@gmail.com"> <br>
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                    <div id="email-error" class="error-message"></div> <br> <!-- Error message -->
 
-                    <label>Where will your next holiday be?</label> <br>
+                    <label>Where is your next holiday?</label> <br>
                     <select class="option-content" id="selection" name="selection" >
-                        <option>South Korea</option>
-                        <option>Japan</option>
-                        <option>China</option>
-                        <option>Maldives</option>
-                        <option>France</option>
-                        <option>Italy</option>
-                        <option>Others</option>
-                    </select> <br>
+                        <option disabled selected value="">Select an option</option>
+                        <option value="south-korea">South Korea</option>
+                        <option value="japan">Japan</option>
+                        <option value="china">China</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="france">France</option>
+                        <option value="italy">Italy</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <div id="selection-error" class="error-message"></div> <br> <!-- Error message -->
 
                     <button class="button-send" id="button-send" type="button">SEND</button>
-
+                    <div id="success-message" class="success-message"></div> <!-- Success message -->
+                    
                     <script src="js/script.js"></script>
                     </form>
                 </section>
@@ -138,9 +148,10 @@
             </div>
 
             <div class="top-destination-container">
+
                 <!-- First Row -->
                 <div class="product">
-                    <img class="image" src="assets/korea.png">
+                    <img class="image" src="assets/korea.png" alt="South Korea Gyeongbokgung Palace">
                     <div class="top-destination-text">
                         <h3>South Korea</h3>
                         <p>Immerse yourself in South Korea's vibrant culture, from the bustling streets of Seoul to the tranquil beauty of Jeju Island.</p>
@@ -148,7 +159,7 @@
                 </div>
 
                 <div class="product">
-                    <img class="image"  src="assets/japan.png">
+                    <img class="image"  src="assets/japan.png" alt="Japanese Temple">
                     <div class="top-destination-text">
                         <h3>Japan</h3>
                         <p>Journey through Japan's rich heritage, exploring ancient temples in Kyoto, futuristic cityscapes in Tokyo, and the majestic beauty of Mount Fuji.</p>
@@ -156,7 +167,7 @@
                 </div>
 
                 <div class="product">
-                    <img class="image"  src="assets/china.png">
+                    <img class="image"  src="assets/china.png" alt="Great Wall of China">
                     <div class="top-destination-text">
                         <h3>China</h3>
                         <p>Discover the wonders of China, from the iconic Great Wall to the historic Terracotta Army, and experience the vibrant energy of cities like Shanghai and Beijing.</p>
@@ -165,7 +176,7 @@
 
                 <!-- Second Row -->
                 <div class="product">
-                    <img class="image"  src="assets/maldives.png">
+                    <img class="image"  src="assets/maldives.png" alt="Maldives beach">
                     <div class="top-destination-text">
                         <h3>Maldives</h3>
                         <p>Escape to paradise in the Maldives, where pristine beaches, crystal-clear waters, and luxurious overwater villas await, offering the ultimate in relaxation and romance.</p>
@@ -173,7 +184,7 @@
                 </div>
 
                 <div class="product">
-                    <img class="image"  src="assets/france.png">
+                    <img class="image"  src="assets/france.png" alt="Eiffel Tower in Paris, France">
                     <div class="top-destination-text">
                         <h3>France</h3>
                         <p>Experience the allure of France, from the iconic landmarks of Paris to the rolling vineyards of Bordeaux and the sun-kissed beaches of the French Riviera.</p>
@@ -181,7 +192,7 @@
                 </div>
 
                 <div class="product">
-                    <img class="image"  src="assets/italy.png">
+                    <img class="image"  src="assets/italy.png" alt="Italian canal">
                     <div class="top-destination-text">
                         <h3>Italy</h3>
                         <p> Explore the timeless beauty of Italy, from the ancient ruins of Rome to the artistic treasures of Florence and the picturesque coastlines of the Amalfi Coast.</p>
@@ -193,6 +204,7 @@
         <hr>
     </article>
 
+    <!-- Bottom section (Book Now) -->
     <article>
         <section class="bottom-container">
             <div class="bottom-text">
@@ -204,6 +216,7 @@
         <hr>
     </article>
 
+    <!-- Footer section (Follow us) -->
     <footer>
         <section class="footer">
             <h1>Follow Us</h1>
@@ -222,7 +235,7 @@
                 <p>Terms of Service</p>
                 <p>Privacy Policy</p>
             </div>
-            <p>Copyright © 2024 Wanderlust Voyages. All rights reserved.</p>
+            <p>Copyright © 2024 Wanderlust Voyages. <br>All rights reserved.</p>
         </section>
     </footer>
 </body>
